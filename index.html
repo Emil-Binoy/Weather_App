@@ -92,7 +92,27 @@
             </div>
             <div class="row sm:flex flex-column  md:flex flex-row lg:ml-10">
                 <div class="div2 block max-w-sm m-3 p-5 shadow-lg rounded-2xl shadow-xl h-80 w-80">
-                    <h1 class="mb-2 text-md text-left font-bold tracking-tight text-gray-900 dark:text-white">Forecast</h1>
+                    <div class="flex justify-between">
+                        <h1 class="mb-2 text-md text-left font-bold tracking-tight text-gray-900 dark:text-white">Forecast</h1>
+                   
+                        <div class="relative inline-block w-30 h-7">
+                            <!-- Hidden checkbox that controls the toggle -->
+                            <input type="checkbox" id="toggle" class="sr-only peer">
+                            
+                            <!-- Toggle background with both labels visible -->
+                            <label for="toggle" class="flex items-center justify-around  cursor-pointer w-full h-full rounded-sm bg-blue-300">
+                              <span class="font-bold text-white z-10 font-light text-[12px]">7-Days</span>
+                              <span class="font-bold text-white z-10 font-light text-[12px]">10-Days</span>
+                            </label>
+                            
+                            <!-- Toggle slider that moves based on peer state -->
+                            <div class="sbtn absolute top-1 left-1 w-14 h-5  rounded-sm flex items-center justify-center text-white font-bold transition-all duration-300 peer-checked:left-15">
+                              <!-- Text that changes based on toggle state -->
+                              <span class="block peer-checked:hidden"></span>
+                              <span class="hidden peer-checked:block">10-Days</span>
+                            </div>
+                          </div>
+                    </div>
                 </div>
                 <div class="div2 block max-w-[1065px] m-3 p-5 shadow-lg rounded-2xl shadow-xl h-80 w-[1065px]">
                     <h1 class="mb-2 text-md text-left font-bold tracking-tight text-gray-900 dark:text-white">Summary</h1>

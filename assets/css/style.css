@@ -13,3 +13,9 @@ body{
 .div2{
     background: rgba(128, 198, 226, 0.5);
 }
+.dbtn{
+    background: rgba(34, 99, 163, 0.5);
+}
+.sbtn{
+    background: rgba(52, 52, 94, 0.747);
+}
